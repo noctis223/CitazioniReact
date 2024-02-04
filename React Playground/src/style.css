@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-container {
+  background: #f8f9fa; /* Cambia il colore di sfondo se necessario */
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ced4da; /* Aggiunge un bordo per evidenziare il rettangolo */
+  border-radius: 8px; /* Aggiunge un bordo arrotondato al rettangolo */
+  width: 70%; /* Larghezza predefinita */
+  transition: width 0.5s ease-in-out; /* Effetto di transizione sulla larghezza */
+}
+
+#new-quote,
+#tweet-quote {
+  margin-top: 10px;
+}
+
+/* Media query per adattare la larghezza del rettangolo su schermi più piccoli */
+@media (max-width: 768px) {
+  .quote-container {
+    width: 90%;
+  }
+}
