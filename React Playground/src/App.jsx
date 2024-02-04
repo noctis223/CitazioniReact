@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaTwitter } from 'react-icons/fa'; 
 
 function App() {
   const [quote, setQuote] = useState('');
@@ -45,7 +46,7 @@ function App() {
     fetchQuote();
   };
 
-  return (
+return (
     <div className="container text-center mt-5">
       <div
         id="quote-box"
@@ -79,14 +80,12 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Tweet Citazione
+        <FaTwitter className="twitter-icon" /> Tweet Citazione {/* Add Twitter icon */}
       </a>
     </div>
   );
 }
 
 export default App;
-
-
 
 console.log('hello world')
